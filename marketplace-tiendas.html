@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Tiendas — Omniparts CR</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i">
+    <!-- css -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/select2/css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.header-spaceship-variant-one.css" media="(min-width: 1200px)">
+    <link rel="stylesheet" href="css/style.mobile-header-variant-one.css" media="(max-width: 1199px)">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/marketplace.css">
+    <style>
+        /* Forzar nombre Omniparts CR en logo texto */
+        .omniparts-logo-text {
+            font-size: 20px;
+            font-weight: 800;
+            color: #fff;
+            letter-spacing: -0.5px;
+        }
+        .omniparts-logo-text span { color: #e52727; }
+    </style>
+</head>
+
+<body>
+    <div class="site">
+
+        <!-- ===== MOBILE HEADER ===== -->
+        <header class="site__mobile-header">
+            <div class="mobile-header">
+                <div class="container">
+                    <div class="mobile-header__body">
+                        <button class="mobile-header__menu-button" type="button">
+                            <svg width="18px" height="14px">
+                                <path d="M-0,8L-0,6L18,6L18,8L-0,8ZM-0,-0L18,-0L18,2L-0,2L-0,-0ZM14,14L-0,14L-0,12L14,12L14,14Z" />
+                            </svg>
+                        </button>
+                        <a class="mobile-header__logo" href="index.html" style="text-decoration:none">
+                            <span class="omniparts-logo-text">OMNI<span>PARTS</span> CR</span>
+                        </a>
+                        <div class="mobile-header__indicators">
+                            <div class="mobile-indicator">
+                                <a href="account-login.html" class="mobile-indicator__button">
+                                    <span class="mobile-indicator__icon">
+                                        <svg width="20" height="20"><path d="M20,20h-2c0-4.4-3.6-8-8-8s-8,3.6-8,8H0c0-4.2,2.6-7.8,6.3-9.3C4.9,9.6,4,7.9,4,6c0-3.3,2.7-6,6-6s6,2.7,6,6c0,1.9-0.9,3.6-2.3,4.7C17.4,12.2,20,15.8,20,20z M14,6c0-2.2-1.8-4-4-4S6,3.8,6,6s1.8,4,4,4S14,8.2,14,6z"/></svg>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="mobile-indicator">
+                                <a href="cart.html" class="mobile-indicator__button">
+                                    <span class="mobile-indicator__icon">
+                                        <svg width="20" height="20"><circle cx="7" cy="17" r="2"/><circle cx="15" cy="17" r="2"/><path d="M20,4.4V5l-1.8,6.3c-0.1,0.4-0.5,0.7-1,0.7H6.7c-0.4,0-0.8-0.3-1-0.7L3.3,3.9C3.1,3.3,2.6,3,2.1,3H0.4C0.2,3,0,2.8,0,2.6V1.4C0,1.2,0.2,1,0.4,1h2.5c1,0,1.8,0.6,2.1,1.6L5.1,3l2.3,6.8c0,0.1,0.2,0.2,0.3,0.2h8.6c0.1,0,0.3-0.1,0.3-0.2l1.3-4.4C17.9,5.2,17.7,5,17.5,5H9.4C9.2,5,9,4.8,9,4.6V3.4C9,3.2,9.2,3,9.4,3h9.2C19.4,3,20,3.6,20,4.4z"/></svg>
+                                        <span class="mobile-indicator__counter">3</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ===== DESKTOP HEADER ===== -->
+        <header class="site__header">
+            <div class="header">
+                <div class="header__megamenu-area megamenu-area"></div>
+                <div class="header__topbar-start-bg"></div>
+                <div class="header__topbar-start">
+                    <div class="topbar topbar--spaceship-start">
+                        <div class="topbar__item-text d-none d-xxl-flex">Tel: (506) 2200-0000</div>
+                        <div class="topbar__item-text"><a class="topbar__link" href="about-us.html">Nosotros</a></div>
+                        <div class="topbar__item-text"><a class="topbar__link" href="contact-us-v1.html">Contacto</a></div>
+                        <div class="topbar__item-text"><a class="topbar__link" href="track-order.html">Rastrear Pedido</a></div>
+                        <div class="topbar__item-text"><a class="topbar__link" href="marketplace-tiendas.html" style="color:#ffaa00;font-weight:600">🏪 Marketplace</a></div>
+                    </div>
+                </div>
+                <div class="header__topbar-end-bg"></div>
+                <div class="header__topbar-end">
+                    <div class="topbar topbar--spaceship-end">
+                        <div class="topbar__item-button topbar__menu">
+                            <button class="topbar__button topbar__button--has-arrow topbar__menu-button" type="button">
+                                <span class="topbar__button-label">Moneda:</span>
+                                <span class="topbar__button-title">CRC</span>
+                                <span class="topbar__button-arrow"><svg width="7px" height="5px"><path d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z" /></svg></span>
+                            </button>
+                            <div class="topbar__menu-body">
+                                <a class="topbar__menu-item" href="#">₡ Colón Costarricense</a>
+                                <a class="topbar__menu-item" href="#">$ Dólar Americano</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__navbar">
+                    <div class="header__navbar-departments">
+                        <div class="departments">
+                            <button class="departments__button" type="button">
+                                <span class="departments__button-icon"><svg width="16px" height="12px"><path d="M0,7L0,5L16,5L16,7L0,7ZM0,0L16,0L16,2L0,2L0,0ZM12,12L0,12L0,10L12,10L12,12Z" /></svg></span>
+                                <span class="departments__button-title">Categorías</span>
+                                <span class="departments__button-arrow"><svg width="9px" height="6px"><path d="M0.2,0.4c0.4-0.4,1-0.5,1.4-0.1l2.9,3l2.9-3c0.4-0.4,1.1-0.4,1.4,0.1c0.3,0.4,0.3,0.9-0.1,1.3L4.5,6L0.3,1.6C-0.1,1.3-0.1,0.7,0.2,0.4z" /></svg></span>
+                            </button>
+                            <div class="departments__menu">
+                                <div class="departments__arrow"></div>
+                                <div class="departments__body">
+                                    <ul class="departments__list">
+                                        <li class="departments__list-padding" role="presentation"></li>
+                                        <li class="departments__item"><a href="" class="departments__item-link">Motor y Transmisión</a></li>
+                                        <li class="departments__item"><a href="" class="departments__item-link">Frenos y Suspensión</a></li>
+                                        <li class="departments__item"><a href="" class="departments__item-link">Carrocería y Exterior</a></li>
+                                        <li class="departments__item"><a href="" class="departments__item-link">Iluminación</a></li>
+                                        <li class="departments__item"><a href="" class="departments__item-link">Interior</a></li>
+                                        <li class="departments__item"><a href="" class="departments__item-link">Sistema Eléctrico</a></li>
+                                        <li class="departments__item"><a href="" class="departments__item-link">Aire Acondicionado</a></li>
+                                        <li class="departments__item"><a href="" class="departments__item-link">Herramientas y Taller</a></li>
+                                        <li class="departments__list-padding" role="presentation"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__navbar-menu">
+                        <nav class="main-navigation">
+                            <ul class="main-navigation__list">
+                                <li><a href="index.html" class="main-navigation__link">Inicio</a></li>
+                                <li class="main-navigation__item--active"><a href="marketplace-tiendas.html" class="main-navigation__link main-navigation__link--active">Tiendas</a></li>
+                                <li><a href="shop-grid-4-columns-full.html" class="main-navigation__link">Productos</a></li>
+                                <li><a href="about-us.html" class="main-navigation__link">Nosotros</a></li>
+                                <li><a href="contact-us-v1.html" class="main-navigation__link">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__navbar-phone d-none d-xxl-flex">
+                        <div class="header-phone">
+                            <div class="header-phone__body">
+                                <div class="header-phone__icon">
+                                    <svg width="24px" height="24px"><path d="M21,15.5c-1.2,0-2.4-0.2-3.6-0.6c-0.3-0.1-0.7-0.1-1,0.1l-2.2,2.2c-2.8-1.4-5.1-3.7-6.5-6.5l2.2-2.2c0.3-0.3,0.4-0.7,0.2-1C9.8,6.4,9.5,5.2,9.5,4c0-0.6-0.4-1-1-1H5C4.4,3,4,3.4,4,4c0,9.4,7.6,17,17,17c0.6,0,1-0.4,1-1v-3.5C22,15.9,21.6,15.5,21,15.5z"/></svg>
+                                </div>
+                                <div class="header-phone__title">(506) 2200-0000</div>
+                                <div class="header-phone__subtitle">Soporte al Cliente</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__logo">
+                    <a href="index.html" style="text-decoration:none;display:flex;align-items:center;height:100%;padding:0 20px;">
+                        <span style="font-size:24px;font-weight:800;color:#fff;letter-spacing:-0.5px;">OMNI<span style="color:#e52727;">PARTS</span> CR</span>
+                    </a>
+                </div>
+                <div class="header__search">
+                    <div class="search">
+                        <form action="" class="search__body">
+                            <div class="search__shadow"></div>
+                            <input class="search__input" type="text" placeholder="Buscar por número de parte o palabra clave">
+                            <button class="search__button search__button--start" type="button">
+                                <span class="search__button-icon"><svg width="20" height="20"><path d="M19.2,17.8c0,0-0.2,0.5-0.5,0.8c-0.4,0.4-0.9,0.6-0.9,0.6s-0.9,0.7-2.8-1.6c-1.1-1.4-2.2-2.8-3.1-3.9C10.9,14.5,9.5,15,8,15c-3.9,0-7-3.1-7-7s3.1-7,7-7s7,3.1,7,7c0,1.5-0.5,2.9-1.3,4c1.1,0.8,2.5,2,4,3.1C20,16.8,19.2,17.8,19.2,17.8z M8,3C5.2,3,3,5.2,3,8c0,2.8,2.2,5,5,5c2.8,0,5-2.2,5-5C13,5.2,10.8,3,8,3z"/></svg></span>
+                            </button>
+                            <div class="search__field"></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="header__indicators">
+                    <div class="indicator">
+                        <a href="account-login.html" class="indicator__button">
+                            <span class="indicator__icon"><svg width="20" height="20"><path d="M20,20h-2c0-4.4-3.6-8-8-8s-8,3.6-8,8H0c0-4.2,2.6-7.8,6.3-9.3C4.9,9.6,4,7.9,4,6c0-3.3,2.7-6,6-6s6,2.7,6,6c0,1.9-0.9,3.6-2.3,4.7C17.4,12.2,20,15.8,20,20z M14,6c0-2.2-1.8-4-4-4S6,3.8,6,6s1.8,4,4,4S14,8.2,14,6z"/></svg></span>
+                            <span class="indicator__title">Mi Cuenta</span>
+                        </a>
+                    </div>
+                    <div class="indicator">
+                        <a href="wishlist.html" class="indicator__button">
+                            <span class="indicator__icon"><svg width="20" height="20"><path d="M14,3c2.2,0,4,1.8,4,4c0,4-5.2,10-8,10S2,11,2,7c0-2.2,1.8-4,4-4c1,0,1.9,0.4,2.7,1L10,5.2L11.3,4C12.1,3.4,13,3,14,3 M14,1c-1.5,0-2.9,0.6-4,1.5C8.9,1.6,7.5,1,6,1C2.7,1,0,3.7,0,7c0,5,6,12,10,12s10-7,10-12C20,3.7,17.3,1,14,1L14,1z"/></svg></span>
+                            <span class="indicator__title">Favoritos</span>
+                        </a>
+                    </div>
+                    <div class="indicator indicator--trigger--click">
+                        <button class="indicator__button" type="button">
+                            <span class="indicator__icon"><svg width="20" height="20"><circle cx="7" cy="17" r="2"/><circle cx="15" cy="17" r="2"/><path d="M20,4.4V5l-1.8,6.3c-0.1,0.4-0.5,0.7-1,0.7H6.7c-0.4,0-0.8-0.3-1-0.7L3.3,3.9C3.1,3.3,2.6,3,2.1,3H0.4C0.2,3,0,2.8,0,2.6V1.4C0,1.2,0.2,1,0.4,1h2.5c1,0,1.8,0.6,2.1,1.6L5.1,3l2.3,6.8c0,0.1,0.2,0.2,0.3,0.2h8.6c0.1,0,0.3-0.1,0.3-0.2l1.3-4.4C17.9,5.2,17.7,5,17.5,5H9.4C9.2,5,9,4.8,9,4.6V3.4C9,3.2,9.2,3,9.4,3h9.2C19.4,3,20,3.6,20,4.4z"/></svg>
+                                <span class="indicator__counter">3</span>
+                            </span>
+                            <span class="indicator__title">Carrito</span>
+                        </button>
+                        <div class="indicator__dropdown">
+                            <div class="dropcart">
+                                <div class="dropcart__empty">Su carrito está vacío!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- site__header / end -->
+
+        <!-- ===== BODY ===== -->
+        <div class="site__body">
+
+            <!-- BREADCRUMB -->
+            <div class="marketplace-breadcrumb">
+                <div class="container">
+                    <a href="index.html">Inicio</a>
+                    <span>/</span>
+                    <strong>Marketplace de Tiendas</strong>
+                </div>
+            </div>
+
+            <!-- HERO DEL MARKETPLACE -->
+            <div class="marketplace-hero">
+                <div class="container">
+                    <h1 class="marketplace-hero__title">Marketplace de Repuesteras</h1>
+                    <p class="marketplace-hero__subtitle">Descubrí cientos de tiendas verificadas de repuestos en Costa Rica</p>
+                    <div class="marketplace-hero__search">
+                        <input type="text" placeholder="Buscar tienda por nombre, ubicación o especialidad...">
+                        <button type="button"><i class="fas fa-search"></i> Buscar Tienda</button>
+                    </div>
+                    <div class="marketplace-hero__stats">
+                        <div>
+                            <div class="marketplace-hero__stat-number">248</div>
+                            <div class="marketplace-hero__stat-label">Tiendas Activas</div>
+                        </div>
+                        <div>
+                            <div class="marketplace-hero__stat-number">54,300+</div>
+                            <div class="marketplace-hero__stat-label">Productos</div>
+                        </div>
+                        <div>
+                            <div class="marketplace-hero__stat-number">7 Provincias</div>
+                            <div class="marketplace-hero__stat-label">Cobertura Nacional</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FILTROS -->
+            <div class="marketplace-filters">
+                <div class="container">
+                    <div class="marketplace-filters__inner">
+                        <span class="marketplace-filters__label">Filtrar por:</span>
+                        <button class="marketplace-filter-btn active" onclick="setFilter(this,'todas')">Todas</button>
+                        <button class="marketplace-filter-btn" onclick="setFilter(this,'san-jose')">San José</button>
+                        <button class="marketplace-filter-btn" onclick="setFilter(this,'alajuela')">Alajuela</button>
+                        <button class="marketplace-filter-btn" onclick="setFilter(this,'heredia')">Heredia</button>
+                        <button class="marketplace-filter-btn" onclick="setFilter(this,'cartago')">Cartago</button>
+                        <button class="marketplace-filter-btn" onclick="setFilter(this,'guanacaste')">Guanacaste</button>
+                        <button class="marketplace-filter-btn" onclick="setFilter(this,'puntarenas')">Puntarenas</button>
+                        <button class="marketplace-filter-btn" onclick="setFilter(this,'limon')">Limón</button>
+                        <div class="marketplace-sort">
+                            <label>Ordenar por:</label>
+                            <select>
+                                <option>Mejor valorados</option>
+                                <option>Más productos</option>
+                                <option>Más recientes</option>
+                                <option>A-Z</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TIENDAS DESTACADAS -->
+            <div class="featured-stores">
+                <div class="container">
+                    <div class="featured-stores__header">
+                        <h2 class="featured-stores__title">⭐ Tiendas Destacadas</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <a href="marketplace-tienda-perfil.html" class="store-card-featured" style="text-decoration:none;color:inherit;">
+                                <div class="store-card-featured__logo" style="background:linear-gradient(135deg,#e52727,#a01a1a);">RA</div>
+                                <div class="store-card-featured__info">
+                                    <span class="store-card-featured__name">Repuestos Auto Tico</span>
+                                    <div class="store-card-featured__location"><i class="fas fa-map-marker-alt" style="color:#e52727;font-size:11px;"></i> San José, Desamparados</div>
+                                    <div class="store-card-featured__tags">
+                                        <span class="store-card__tag">Toyota</span>
+                                        <span class="store-card__tag">Honda</span>
+                                        <span class="store-card__tag">Nissan</span>
+                                        <span class="store-card__tag">Motor</span>
+                                    </div>
+                                    <div class="store-card-featured__rating">
+                                        <span class="store-card__stars">★★★★★</span>
+                                        <span class="store-card__rating-num">4.9</span>
+                                        <span class="store-card__rating-count">(312 reseñas)</span>
+                                        <span class="store-card__verified-badge" style="position:static;margin-left:8px;"><i class="fas fa-check-circle"></i> Verificada</span>
+                                    </div>
+                                </div>
+                                <div class="store-card-featured__action">
+                                    <span class="store-card__visit-btn">Ver Tienda</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="marketplace-tienda-perfil.html" class="store-card-featured" style="text-decoration:none;color:inherit;">
+                                <div class="store-card-featured__logo" style="background:linear-gradient(135deg,#1565c0,#0d47a1);">TR</div>
+                                <div class="store-card-featured__info">
+                                    <span class="store-card-featured__name">Turbo Repuestos CR</span>
+                                    <div class="store-card-featured__location"><i class="fas fa-map-marker-alt" style="color:#e52727;font-size:11px;"></i> Alajuela, La Uruca</div>
+                                    <div class="store-card-featured__tags">
+                                        <span class="store-card__tag">Mitsubishi</span>
+                                        <span class="store-card__tag">Isuzu</span>
+                                        <span class="store-card__tag">Suzuki</span>
+                                    </div>
+                                    <div class="store-card-featured__rating">
+                                        <span class="store-card__stars">★★★★★</span>
+                                        <span class="store-card__rating-num">4.8</span>
+                                        <span class="store-card__rating-count">(198 reseñas)</span>
+                                        <span class="store-card__verified-badge" style="position:static;margin-left:8px;"><i class="fas fa-check-circle"></i> Verificada</span>
+                                    </div>
+                                </div>
+                                <div class="store-card-featured__action">
+                                    <span class="store-card__visit-btn">Ver Tienda</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="marketplace-tienda-perfil.html" class="store-card-featured" style="text-decoration:none;color:inherit;">
+                                <div class="store-card-featured__logo" style="background:linear-gradient(135deg,#2e7d32,#1b5e20);">MP</div>
+                                <div class="store-card-featured__info">
+                                    <span class="store-card-featured__name">Mecánica Precisión</span>
+                                    <div class="store-card-featured__location"><i class="fas fa-map-marker-alt" style="color:#e52727;font-size:11px;"></i> Heredia, Santo Domingo</div>
+                                    <div class="store-card-featured__tags">
+                                        <span class="store-card__tag">Frenos</span>
+                                        <span class="store-card__tag">Suspensión</span>
+                                        <span class="store-card__tag">Dirección</span>
+                                    </div>
+                                    <div class="store-card-featured__rating">
+                                        <span class="store-card__stars">★★★★½</span>
+                                        <span class="store-card__rating-num">4.7</span>
+                                        <span class="store-card__rating-count">(156 reseñas)</span>
+                                        <span class="store-card__verified-badge" style="position:static;margin-left:8px;"><i class="fas fa-check-circle"></i> Verificada</span>
+                                    </div>
+                                </div>
+                                <div class="store-card-featured__action">
+                                    <span class="store-card__visit-btn">Ver Tienda</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="marketplace-tienda-perfil.html" class="store-card-featured" style="text-decoration:none;color:inherit;">
+                                <div class="store-card-featured__logo" style="background:linear-gradient(135deg,#f57c00,#e65100);">EL</div>
+                                <div class="store-card-featured__info">
+                                    <span class="store-card-featured__name">Electro-Luces Tico</span>
+                                    <div class="store-card-featured__location"><i class="fas fa-map-marker-alt" style="color:#e52727;font-size:11px;"></i> Cartago, Tres Ríos</div>
+                                    <div class="store-card-featured__tags">
+                                        <span class="store-card__tag">Iluminación</span>
+                                        <span class="store-card__tag">Eléctrico</span>
+                                        <span class="store-card__tag">LED</span>
+                                    </div>
+                                    <div class="store-card-featured__rating">
+                                        <span class="store-card__stars">★★★★½</span>
+                                        <span class="store-card__rating-num">4.6</span>
+                                        <span class="store-card__rating-count">(89 reseñas)</span>
+                                        <span class="store-card__verified-badge" style="position:static;margin-left:8px;"><i class="fas fa-check-circle"></i> Verificada</span>
+                                    </div>
+                                </div>
+                                <div class="store-card-featured__action">
+                                    <span class="store-card__visit-btn">Ver Tienda</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GRID DE TODAS LAS TIENDAS -->
+            <div class="stores-grid">
+                <div class="container">
+                    <div class="stores-grid__heading">
+                        <h2>Todas las Tiendas <span style="color:#888;font-weight:400;font-size:16px;">(248 tiendas)</span></h2>
+                    </div>
+                    <div class="row" id="storesGrid">
+
+                        <!-- Store 1 -->
+                        <div class="col-md-6 col-lg-4 col-xl-3 mb-4 store-item" data-province="san-jose">
+                            <div class="store-card">
+                                <div class="store-card__banner">
+                                    <div class="store-card__banner-placeholder" style="background:linear-gradient(135deg,#37474f,#263238);"></div>
+                                    <span class="store-card__featured-badge">Destacada</span>
+                                    <span class="store-card__verified-badge"><i class="fas fa-check-circle"></i> Verificada</span>
+                                    <div class="store-card__logo-wrap" style="background:linear-gradient(135deg,#e52727,#a01a1a);">RA</div>
+                                </div>
+                                <div class="store-card__body">
+                                    <a href="marketplace-tienda-perfil.html" class="store-card__name">Repuestos Auto Tico</a>
+                                    <div class="store-card__location"><i class="fas fa-map-marker-alt" style="color:#e52727;font-size:10px;"></i> Desamparados, San José</div>
+                                    <div class="store-card__rating">
+                                        <span class="store-card__stars">★★★★★</span>
+                                        <span class="store-card__rating-num">4.9</span>
+                                        <span class="store-card__rating-count">(312)</span>
+                                    </div>
+                                    <div class="store-card__tags">
+                                        <span class="store-card__tag">Toyota</span>
+                                        <span class="store-card__tag">Honda</span>
+                                        <span class="store-card__tag">Motor</span>
+                                    </div>
+                                    <div class="store-card__meta">
+                                        <div class="store-card__products-count"><strong>1,840</strong> productos</div>
+                                        <a href="marketplace-tienda-perfil.html" class="store-card__visit-btn">Ver Tienda</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Store 2 -->
+                        <div class="col-md-6 col-lg-4 col-xl-3 mb-4 store-item" data-province="alajuela">
+                            <div class="store-card">
+                                <div class="store-card__banner">
+                                    <div class="store-card__banner-placeholder" style="background:linear-gradient(135deg,#1a237e,#283593);"></div>
+                                    <span class="store-card__verified-badge"><i class="fas fa-check-circle"></i> Verificada</span>
+                                    <div class="store-card__logo-wrap" style="background:linear-gradient(135deg,#1565c0,#0d47a1);">TR</div>
+                                </div>
+                                <div class="store-card__body">
+                                    <a href="marketplace-tienda-perfil.html" class="store-card__name">Turbo Repuestos CR</a>
+                                    <div class="store-card__location"><i class="fas fa-map-marker-alt" style="color:#e52727;font-size:10px;"></i> La Uruca, Alajuela</div>
+                                    <div class="store-card__rating">
+                                        <span class="store-card__stars">★★★★★</span>
+                                        <span class="store-card__rating-num">4.8</span>
+                                        <span class="store-card__rating-count">(198)</span>
+                                    </div>
+                                    <div class="store-card__tags">
+                                        <span class="store-card__tag">Mitsubishi</span>
+                                        <span class="store-card__tag">Isuzu</span>
+                                    </div>
+                                    <div class="store-card__meta">
+                                        <div class="store-card__products-count"><strong>980</strong> productos</div>
+                                        <a href="marketplace-tienda-perfil.html" class="store-card__visit-btn">Ver Tienda</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Store 3 -->
+                        <div class="col-md-6 col-lg-4 col-xl-3 mb-4 store-item" data-province="heredia">
+                            <div class="store-card">
+                                <div class="store-card__banner">
+                                    <div class="store-card__banner-placeholder" style="background:linear-gradient(135deg,#1b5e20,#2e7d32);"></div>
+                                    <span class="store-card__verified-badge"><i class="fas fa-check-circle"></i> Verificada</span>
+                                    <div class="store-card__logo-wrap" style="background:linear-gradient(135deg,#2e7d32,#1b5e20);">MP</div>
+                                </div>
+                                <div class="store-card__body">
+                                    <a href="marketplace-tienda-perfil.html" class="store-card__name">Mecánica Precisión</a>
+                                    <div class="store-card__location"><i class="fas fa-map-marker-alt" style="color:#e52727;font-size:10px;"></i> Santo Domingo, Heredia</div>
+                                    <div class="store-card__rating">
+                                        <span class="store-card__stars">★★★★½</span>
+                                        <span class="store-card__rating-num">4.7</span>
+                                        <span class="store-card__rating-count">(156)</span>
+                                    </div>
+                                    <div class="store-card__tags">
+                                        <span class="store-card__tag">Frenos</span>
+                                        <span class="store-card__tag">Suspensión</span>
+                                    </div>
+                                    <div class="store-card__meta">
+                                        <div class="store-card__products-count"><strong>650</strong> productos</div>
+                                        <a href="marketplace-tienda-perfil.html" class="store-card__visit-btn">Ver Tienda</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Store 4 -->
+                        <div class="col-md-6 col-lg-4 col-xl-3 mb-4 store-item" data-province="cartago">
+                            <div class="store-card">
+                                <div class="store-card__banner">
+                                    <div class="store-card__banner-placeholder" style="background:linear-gradient(135deg,#e65100,#f57c00);"></div>
+                                    <div class="store-card__logo-wrap" style="background:linear-gradient(135deg,#f57c00,#e65100);">EL</div>
+                                </div>
+                                <div class="store-card__body">
+                                    <a href="marketplace-tienda-perfil.html" class="store-card__name">Electro-Luces Tico</a>
+                                    <div class="store-card__location"><i class="fas fa-map-marker-alt" style="color:#e52727;font-size:10px;"></i> Tres Ríos, Cartago</div>
+                                    <div class="store-card__rating">
+                                        <span class="store-card__stars">★★★★½</span>
+                                        <span class="store-card__rating-num">4.6</span>
+                                        <span class="store-card__rating-count">(89)</span>
+                                    </div>
+                                    <div class="store-card__tags">
+                                        <span class="store-card__tag">Iluminación</span>
+                                        <span class="store-card__tag">LED</span>
+                                    </div>
+                                    <div class="store-card__meta">
+                                        <div class="store-card__products-count"><strong>420</strong> productos</div>
+                                        <a href="marketplace-tienda-perfil.html" class="store-card__visit-btn">Ver Tienda</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Store 5 -->
+                        <div class="col-md-6 col-lg-4 col-xl-3 mb-4 store-item" data-province="san-jose">
+                            <div class="store-card">
+                                <div class="store-card__banner">
+                                    <div class="store-card__banner-placeholder" style="background:linear-gradient(135deg,#4a148c,#6a1b9a);"></div>
+                                    <span class="store-card__verified-badge"><i class="fas fa-check-circle"></i> Verificada</span>
+                                    <div class="store-card__logo-wrap" style="background:linear-gradient(135deg,#6a1b9a,#4a148c);">AC</div>
+                                </div>
+                                <div class="store-card__body">
+                                    <a href="marketplace-tienda-perfil.html" class="store-card__name">Auto Cooling Systems</a>
+                                    <div class="store-card__location"><i class="fas fa-map-marker-alt" style="color:#e52727;font-size:10px;"></i> Escazú, San José</div>
+                                    <div class="store-card__rating">
+                                        <span class="store-card__stars">★★★★★</span>
+                                        <span class="store-card__rating-num">4.8</span>
+                                        <span class="store-card__rating-count">(204)</span>
+                                    </div>
+                                    <div class="store-card__tags">
+                                        <span class="store-card__tag">A/C</span>
+                                        <span class="store-card__tag">Radiadores</span>
+                                        <span class="store-card__tag">Cooling</span>
+                                    </div>
+                                    <div class="store-card__meta">
+                                        <div class="store-card__products-count"><strong>730</strong> productos</div>
+                                        <a href="marketplace-tienda-perfil.html" class="store-card__visit-btn">Ver Tienda</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Store 6 -->
+                        <div class="col-md-6 col-lg-4 col-xl-3 mb-4 store-item" data-province="guanacaste">
+                            <div class="store-card">
+                                <div class="store-card__banner">
+                                    <div class="store-card__banner-placeholder" style="background:linear-gradient(135deg,#bf360c,#d84315);"></div>
+                                    <div class="store-card__logo-wrap" style="background:linear-gradient(135deg,#d84315,#bf360c);">NG</div>
+                                </div>
+                                <div class="store-card__body">
+                                    <a href="marketplace-tienda-perfil.html" class="store-card__name">Norte Repuestos GN</a>
+                                    <div class="store-card__location"><i class="fas fa-map-marker-alt" style="color:#e52727;font-size:10px;"></i> Liberia, Guanacaste</div>
+                                    <div class="store-card__rating">
+                                        <span class="store-card__stars">★★★★</span>
+                                        <span class="store-card__rating-num">4.4</span>
+                                        <span class="store-card__rating-count">(67)</span>
+                                    </div>
+                                    <div class="store-card__tags">
+                                        <span class="store-card__tag">Pickup</span>
+                                        <span class="store-card__tag">4x4</span>
+                                        <span class="store-card__tag">Ford</span>
+                                    </div>
+                                    <div class="store-card__meta">
+                                        <div class="store-card__products-count"><strong>310</strong> productos</div>
+                                        <a href="marketplace-tienda-perfil.html" class="store-card__visit-btn">Ver Tienda</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Store 7 -->
+                        <div class="col-md-6 col-lg-4 col-xl-3 mb-4 store-item" data-province="san-jose">
+                            <div class="store-card">
+                                <div class="store-card__banner">
+                                    <div class="store-card__banner-placeholder" style="background:linear-gradient(135deg,#004d40,#00695c);"></div>
+                                    <span class="store-card__verified-badge"><i class="fas fa-check-circle"></i> Verificada</span>
+                                    <div class="store-card__logo-wrap" style="background:linear-gradient(135deg,#00695c,#004d40);">PG</div>
+                                </div>
+                                <div class="store-card__body">
+                                    <a href="marketplace-tienda-perfil.html" class="store-card__name">ProGas & Combustible</a>
+                                    <div class="store-card__location"><i class="fas fa-map-marker-alt" style="color:#e52727;font-size:10px;"></i> San Pedro, San José</div>
+                                    <div class="store-card__rating">
+                                        <span class="store-card__stars">★★★★★</span>
+                                        <span class="store-card__rating-num">4.9</span>
+                                        <span class="store-card__rating-count">(178)</span>
+                                    </div>
+                                    <div class="store-card__tags">
+                                        <span class="store-card__tag">Inyección</span>
+                                        <span class="store-card__tag">Combustible</span>
+                                    </div>
+                                    <div class="store-card__meta">
+                                        <div class="store-card__products-count"><strong>540</strong> productos</div>
+                                        <a href="marketplace-tienda-perfil.html" class="store-card__visit-btn">Ver Tienda</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Store 8 -->
+                        <div class="col-md-6 col-lg-4 col-xl-3 mb-4 store-item" data-province="limon">
+                            <div class="store-card">
+                                <div class="store-card__banner">
+                                    <div class="store-card__banner-placeholder" style="background:linear-gradient(135deg,#01579b,#0277bd);"></div>
+                                    <div class="store-card__logo-wrap" style="background:linear-gradient(135deg,#0277bd,#01579b);">CA</div>
+                                </div>
+                                <div class="store-card__body">
+                                    <a href="marketplace-tienda-perfil.html" class="store-card__name">Caribe Auto Parts</a>
+                                    <div class="store-card__location"><i class="fas fa-map-marker-alt" style="color:#e52727;font-size:10px;"></i> Limón Centro</div>
+                                    <div class="store-card__rating">
+                                        <span class="store-card__stars">★★★★</span>
+                                        <span class="store-card__rating-num">4.3</span>
+                                        <span class="store-card__rating-count">(45)</span>
+                                    </div>
+                                    <div class="store-card__tags">
+                                        <span class="store-card__tag">Hyundai</span>
+                                        <span class="store-card__tag">Kia</span>
+                                    </div>
+                                    <div class="store-card__meta">
+                                        <div class="store-card__products-count"><strong>280</strong> productos</div>
+                                        <a href="marketplace-tienda-perfil.html" class="store-card__visit-btn">Ver Tienda</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Store 9 -->
+                        <div class="col-md-6 col-lg-4 col-xl-3 mb-4 store-item" data-province="alajuela">
+                            <div class="store-card">
+                                <div class="store-card__banner">
+                                    <div class="store-card__banner-placeholder" style="background:linear-gradient(135deg,#880e4f,#ad1457);"></div>
+                                    <span class="store-card__verified-badge"><i class="fas fa-check-circle"></i> Verificada</span>
+                                    <div class="store-card__logo-wrap" style="background:linear-gradient(135deg,#ad1457,#880e4f);">CF</div>
+                                </div>
+                                <div class="store-card__body">
+                                    <a href="marketplace-tienda-perfil.html" class="store-card__name">Central Frenos Alajuela</a>
+                                    <div class="store-card__location"><i class="fas fa-map-marker-alt" style="color:#e52727;font-size:10px;"></i> Ciudad Quesada, Alajuela</div>
+                                    <div class="store-card__rating">
+                                        <span class="store-card__stars">★★★★½</span>
+                                        <span class="store-card__rating-num">4.6</span>
+                                        <span class="store-card__rating-count">(112)</span>
+                                    </div>
+                                    <div class="store-card__tags">
+                                        <span class="store-card__tag">Frenos</span>
+                                        <span class="store-card__tag">Discos</span>
+                                        <span class="store-card__tag">Pastillas</span>
+                                    </div>
+                                    <div class="store-card__meta">
+                                        <div class="store-card__products-count"><strong>490</strong> productos</div>
+                                        <a href="marketplace-tienda-perfil.html" class="store-card__visit-btn">Ver Tienda</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Store 10 -->
+                        <div class="col-md-6 col-lg-4 col-xl-3 mb-4 store-item" data-province="heredia">
+                            <div class="store-card">
+                                <div class="store-card__banner">
+                                    <div class="store-card__banner-placeholder" style="background:linear-gradient(135deg,#3e2723,#4e342e);"></div>
+                                    <div class="store-card__logo-wrap" style="background:linear-gradient(135deg,#5d4037,#3e2723);">HR</div>
+                                </div>
+                                <div class="store-card__body">
+                                    <a href="marketplace-tienda-perfil.html" class="store-card__name">Heredia Repuestos</a>
+                                    <div class="store-card__location"><i class="fas fa-map-marker-alt" style="color:#e52727;font-size:10px;"></i> Barva, Heredia</div>
+                                    <div class="store-card__rating">
+                                        <span class="store-card__stars">★★★★</span>
+                                        <span class="store-card__rating-num">4.2</span>
+                                        <span class="store-card__rating-count">(78)</span>
+                                    </div>
+                                    <div class="store-card__tags">
+                                        <span class="store-card__tag">VW</span>
+                                        <span class="store-card__tag">Audi</span>
+                                        <span class="store-card__tag">BMW</span>
+                                    </div>
+                                    <div class="store-card__meta">
+                                        <div class="store-card__products-count"><strong>360</strong> productos</div>
+                                        <a href="marketplace-tienda-perfil.html" class="store-card__visit-btn">Ver Tienda</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Store 11 -->
+                        <div class="col-md-6 col-lg-4 col-xl-3 mb-4 store-item" data-province="puntarenas">
+                            <div class="store-card">
+                                <div class="store-card__banner">
+                                    <div class="store-card__banner-placeholder" style="background:linear-gradient(135deg,#006064,#00838f);"></div>
+                                    <div class="store-card__logo-wrap" style="background:linear-gradient(135deg,#00838f,#006064);">PP</div>
+                                </div>
+                                <div class="store-card__body">
+                                    <a href="marketplace-tienda-perfil.html" class="store-card__name">Pacífico Parts</a>
+                                    <div class="store-card__location"><i class="fas fa-map-marker-alt" style="color:#e52727;font-size:10px;"></i> Quepos, Puntarenas</div>
+                                    <div class="store-card__rating">
+                                        <span class="store-card__stars">★★★★</span>
+                                        <span class="store-card__rating-num">4.1</span>
+                                        <span class="store-card__rating-count">(38)</span>
+                                    </div>
+                                    <div class="store-card__tags">
+                                        <span class="store-card__tag">4x4</span>
+                                        <span class="store-card__tag">Jeep</span>
+                                    </div>
+                                    <div class="store-card__meta">
+                                        <div class="store-card__products-count"><strong>220</strong> productos</div>
+                                        <a href="marketplace-tienda-perfil.html" class="store-card__visit-btn">Ver Tienda</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Store 12 -->
+                        <div class="col-md-6 col-lg-4 col-xl-3 mb-4 store-item" data-province="cartago">
+                            <div class="store-card">
+                                <div class="store-card__banner">
+                                    <div class="store-card__banner-placeholder" style="background:linear-gradient(135deg,#33691e,#558b2f);"></div>
+                                    <span class="store-card__verified-badge"><i class="fas fa-check-circle"></i> Verificada</span>
+                                    <div class="store-card__logo-wrap" style="background:linear-gradient(135deg,#558b2f,#33691e);">VS</div>
+                                </div>
+                                <div class="store-card__body">
+                                    <a href="marketplace-tienda-perfil.html" class="store-card__name">Valle Sur Repuestos</a>
+                                    <div class="store-card__location"><i class="fas fa-map-marker-alt" style="color:#e52727;font-size:10px;"></i> Paraíso, Cartago</div>
+                                    <div class="store-card__rating">
+                                        <span class="store-card__stars">★★★★½</span>
+                                        <span class="store-card__rating-num">4.5</span>
+                                        <span class="store-card__rating-count">(95)</span>
+                                    </div>
+                                    <div class="store-card__tags">
+                                        <span class="store-card__tag">Toyota</span>
+                                        <span class="store-card__tag">Transmisión</span>
+                                    </div>
+                                    <div class="store-card__meta">
+                                        <div class="store-card__products-count"><strong>580</strong> productos</div>
+                                        <a href="marketplace-tienda-perfil.html" class="store-card__visit-btn">Ver Tienda</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- end row -->
+
+                    <!-- Paginación -->
+                    <div class="marketplace-pagination">
+                        <ul class="pagination">
+                            <li class="page-item disabled"><a class="page-link" href="#">&laquo;</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#">21</a></li>
+                            <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BANNER VENDE EN OMNIPARTS -->
+            <div class="sell-banner">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7">
+                            <h2 class="sell-banner__title">¿Tenés una repuestera? ¡Vendé en Omniparts CR!</h2>
+                            <p class="sell-banner__text">Llegá a miles de compradores en todo el país. Registrá tu tienda gratis y empezá a vender hoy mismo.</p>
+                            <a href="account-login.html" class="sell-banner__btn">Registrar Mi Tienda Gratis</a>
+                        </div>
+                        <div class="col-lg-5 mt-4 mt-lg-0">
+                            <div class="sell-banner__features">
+                                <div class="sell-banner__feature">
+                                    <div class="sell-banner__feature-icon"><i class="fas fa-store"></i></div>
+                                    <span>Tu tienda online con perfil propio y catálogo completo</span>
+                                </div>
+                                <div class="sell-banner__feature">
+                                    <div class="sell-banner__feature-icon"><i class="fas fa-shield-alt"></i></div>
+                                    <span>Sistema de reseñas verificadas para ganar confianza</span>
+                                </div>
+                                <div class="sell-banner__feature">
+                                    <div class="sell-banner__feature-icon"><i class="fas fa-chart-line"></i></div>
+                                    <span>Panel de análisis y estadísticas de tu negocio</span>
+                                </div>
+                                <div class="sell-banner__feature">
+                                    <div class="sell-banner__feature-icon"><i class="fas fa-truck"></i></div>
+                                    <span>Integración con envíos a nivel nacional</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- site__body / end -->
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="site__footer">
+            <div class="site-footer">
+                <div class="decor site-footer__decor decor--type--bottom">
+                    <div class="decor__body">
+                        <div class="decor__start"></div>
+                        <div class="decor__end"></div>
+                        <div class="decor__center"></div>
+                    </div>
+                </div>
+                <div class="site-footer__widgets">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-xl-4">
+                                <div class="site-footer__widget footer-contacts">
+                                    <h5 class="footer-contacts__title">Omniparts CR</h5>
+                                    <div class="footer-contacts__text">
+                                        El marketplace líder de repuestos automotrices en Costa Rica. Conectamos compradores con las mejores repuesteras del país.
+                                    </div>
+                                    <address class="footer-contacts__contacts">
+                                        <dl><dt>Teléfono</dt><dd>+506 2200-0000</dd></dl>
+                                        <dl><dt>Correo</dt><dd>info@omnipartscr.com</dd></dl>
+                                        <dl><dt>Ubicación</dt><dd>San José, Costa Rica</dd></dl>
+                                        <dl><dt>Horario</dt><dd>Lun-Vie 8:00am - 6:00pm</dd></dl>
+                                    </address>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 col-xl-2">
+                                <div class="site-footer__widget footer-links">
+                                    <h5 class="footer-links__title">Información</h5>
+                                    <ul class="footer-links__list">
+                                        <li class="footer-links__item"><a href="about-us.html" class="footer-links__link">Sobre Nosotros</a></li>
+                                        <li class="footer-links__item"><a href="" class="footer-links__link">Política de Envíos</a></li>
+                                        <li class="footer-links__item"><a href="" class="footer-links__link">Política de Privacidad</a></li>
+                                        <li class="footer-links__item"><a href="marketplace-tiendas.html" class="footer-links__link">Marketplace</a></li>
+                                        <li class="footer-links__item"><a href="contact-us-v1.html" class="footer-links__link">Contacto</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 col-xl-2">
+                                <div class="site-footer__widget footer-links">
+                                    <h5 class="footer-links__title">Mi Cuenta</h5>
+                                    <ul class="footer-links__list">
+                                        <li class="footer-links__item"><a href="account-login.html" class="footer-links__link">Iniciar Sesión</a></li>
+                                        <li class="footer-links__item"><a href="account-orders.html" class="footer-links__link">Mis Pedidos</a></li>
+                                        <li class="footer-links__item"><a href="wishlist.html" class="footer-links__link">Lista de Deseos</a></li>
+                                        <li class="footer-links__item"><a href="account-dashboard.html" class="footer-links__link">Mi Tienda</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <div class="site-footer__widget footer-newsletter">
+                                    <h5 class="footer-newsletter__title">Newsletter</h5>
+                                    <div class="footer-newsletter__text">Suscribite para recibir ofertas especiales y novedades de Omniparts CR.</div>
+                                    <form action="" class="footer-newsletter__form">
+                                        <label class="sr-only" for="footer-newsletter-address">Correo Electrónico</label>
+                                        <input type="text" class="footer-newsletter__form-input" id="footer-newsletter-address" placeholder="Tu correo electrónico...">
+                                        <button class="footer-newsletter__form-button">Suscribirse</button>
+                                    </form>
+                                    <div class="footer-newsletter__text footer-newsletter__text--social">Seguinos en redes sociales</div>
+                                    <div class="footer-newsletter__social-links social-links">
+                                        <ul class="social-links__list">
+                                            <li class="social-links__item social-links__item--facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li class="social-links__item social-links__item--instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li class="social-links__item social-links__item--youtube"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                            <li class="social-links__item social-links__item--twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="site-footer__bottom">
+                    <div class="container">
+                        <div class="site-footer__bottom-row">
+                            <div class="site-footer__copyright">
+                                © 2026 Omniparts CR — Todos los derechos reservados
+                            </div>
+                            <div class="site-footer__payments">
+                                <img src="images/payments.png" alt="Métodos de pago">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- site / end -->
+
+    <!-- mobile-menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu__backdrop"></div>
+        <div class="mobile-menu__body">
+            <button class="mobile-menu__close" type="button">
+                <svg width="12" height="12"><path d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4C11.2,9.8,11.2,10.4,10.8,10.8z"/></svg>
+            </button>
+            <div class="mobile-menu__logo">
+                <span style="font-size:18px;font-weight:800;color:#fff;">OMNI<span style="color:#e52727;">PARTS</span> CR</span>
+            </div>
+            <div class="mobile-menu__search mobile-search">
+                <form class="mobile-search__body">
+                    <input type="text" class="mobile-search__input" placeholder="Buscar...">
+                </form>
+            </div>
+            <div class="mobile-menu__items"></div>
+        </div>
+    </div>
+    <!-- mobile-menu / end -->
+
+    <!-- scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+    <script src="vendor/select2/js/select2.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    function setFilter(btn, province) {
+        document.querySelectorAll('.marketplace-filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const items = document.querySelectorAll('.store-item');
+        items.forEach(item => {
+            if (province === 'todas' || item.dataset.province === province) {
+                item.style.display = '';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+    </script>
+</body>
+</html>
